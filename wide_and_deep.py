@@ -31,6 +31,8 @@ class wide_and_deep:
         self.model = None
         self.train_history = None
         self.test_result = None
+
+        self.tensorboard = TensorBoard(log_dir=LOG_PATH, histogram_freq=1, batch_size=128, write_graph=True, write_grads=False, write_images=False, update_freq='epoch')
     
     def wide(self):     # send only cross producted features into wide for memorization
         wide_input = []
@@ -46,8 +48,6 @@ class wide_and_deep:
         self.wide_outlayer = cross_product_input
         self.x_train_categ_cross_product = x_train_categ_cross_product
         self.x_test_categ_cross_product = x_test_categ_cross_product
-
-        self.tensorboard = TensorBoard(log_dir=LOG_PATH, histogram_freq=1, batch_size=128, write_graph=True, write_grads=False, write_images=False, update_freq='epoch')
     
     def deep(self):       # send continuous input and categorical input into deep for generalization
         k = 1
@@ -150,8 +150,10 @@ if __name__ == '__main__':
     model.evaluate_model()
     model.save_model()
 
+    mode = getattr(model, 'mode')
     train_history = getattr(model, 'train_history')
     test_result = getattr(model, 'test_result')
+    print('model mode : ', mode)
     print('loss : ', test_result[0])
     print('accuracy : ', test_result[1])
 
