@@ -19,7 +19,7 @@ As recommender systems become more and more popular within social media and plat
 * Deep mode : Standard deep learning models with embedded categorical items and continuous items concatenated as input
 * Wide and Deep mode : A hybrid between wide component and deep component by concatenating the respective output layers together
 
-## Results
+## Validation Results
 * Wide mode : loss = 0.5024 | accuracy = 0.7479
 * Deep mode : loss = 0.5099 | accuracy = 0.7970
 * Wide and Deep mode : loss = 0.4339 | accuracy = 0.8199
