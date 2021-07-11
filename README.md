@@ -1,5 +1,5 @@
 # Simple Wide and Deep Model
-Author: Yih Cheng
+Yih CHENG (https://github.com/chengyih001)
 
 This repository is a simple implementation of [Heng-Tze Cheng, *et al.* Wide & Deep Learning for Recommender Systems (2016)](https://arxiv.org/abs/1606.07792).<br>
 The dataset used is from [UCI Machine Learning Repository: Adult Data Set](https://archive.ics.uci.edu/ml/datasets/adult).
