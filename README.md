@@ -1,4 +1,4 @@
-# Simple Wide and Deep Model
+# Wide and Deep Recommender Model
 Yih CHENG (https://github.com/chengyih001)
 
 This repository is a simple implementation of [Heng-Tze Cheng, *et al.* Wide & Deep Learning for Recommender Systems (2016)](https://arxiv.org/abs/1606.07792).<br>
